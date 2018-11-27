@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Match"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context="com.example.ketri.dogsapp.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dogs_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"></android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/random_dogIV"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/show_random_dog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text="@string/showRandomDog"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
